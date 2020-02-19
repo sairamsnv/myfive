@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            color: red;
+            border: 10px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Regisation page</h1>
+    <form action="/hit1/" method="POST">
+        {%csrf_token%}
+       
+    username:<input type="text" name="us"><br>
+    password:<input type="password" name='pa'><br>
+    <br><br>
+    <input type='submit' value="register">
+    </form>
+
+</body>
+</html>
